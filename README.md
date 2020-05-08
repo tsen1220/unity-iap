@@ -37,7 +37,7 @@ public class SquarewarIAP : MonoBehaviour, IStoreListener
 	private void InitPurchasing()
 	{
 		ConfigurationBuilder builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
-	builder.AddProduct("ProductId", ProductType.Comsuable)
+		builder.AddProduct("ProductId", ProductType.Comsuable);
 		UnityPurchasing.Initialize(this, builder);
 	}
 
