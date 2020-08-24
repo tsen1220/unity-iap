@@ -9,7 +9,6 @@ public class ButtonClass : MonoBehaviour
 	public string productId;
 	public ProductType productType;
 
-
 	private void Start()
 	{
 		GetComponent<Button>().onClick.AddListener(() => { FindObjectOfType<UnityIAP>().BuyProductionWithId(productId); });

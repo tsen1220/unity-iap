@@ -28,13 +28,11 @@ public class UnityIAP : MonoBehaviour, IStoreListener
 		UnityPurchasing.Initialize(this, builder);
 	}
 
-
 	public void OnInitialized(IStoreController controller, IExtensionProvider extensions)
 	{
 		this.controller = controller;
 		this.extensions = extensions;
 	}
-
 
 	public void OnInitializeFailed(InitializationFailureReason error)
 	{
