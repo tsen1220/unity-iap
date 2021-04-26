@@ -24,7 +24,7 @@ And check the initialization is completed.
 using UnityEngine;
 using UnityEngine.Purchasing;
 
-public class SquarewarIAP : MonoBehaviour, IStoreListener
+public class UnityIAP : MonoBehaviour, IStoreListener
 {
 	private IStoreController controller;
 	private IExtensionProvider extensions;
